@@ -1,10 +1,10 @@
 #!/bin/bash
-
-# Update the package repositories and install necessary dependencies
 sudo yum -y update
-sudo yum -y install ruby wget python-pip
-chmod +x your_script.sh
-
-
-# Download and install the AWS CodeDeploy agent
+sudo yum -y install ruby
+sudo yum -y install wget
 cd /home/ec2-user
+wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/install
+sudo chmod +x ./install
+sudo ./install auto
+sudo yum install -y python-pip
+sudo pip install awscli

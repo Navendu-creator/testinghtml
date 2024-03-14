@@ -3,13 +3,13 @@
 
 <b>User Data for Dependencies installations for AMAZON Linux 2:-</b>
 
-#!/bin/bash<br />
-sudo apt -y update<br />
-sudo apt -y install ruby<br />
-sudo apt -y install wget<br />
-cd /home/ec2-user<br />
-wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/install<br />
-sudo chmod +x ./install<br />
-sudo ./install auto<br />
-sudo yum install -y python-pip<br />
-sudo pip install awscli<br />
+#!/bin/bash
+sudo yum -y update
+sudo yum -y install ruby
+sudo yum -y install wget
+cd /home/ec2-user
+wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/install
+sudo chmod +x ./install
+sudo ./install auto
+sudo yum install -y python-pip
+sudo pip install awscli
